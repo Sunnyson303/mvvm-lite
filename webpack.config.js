@@ -3,15 +3,20 @@ var HtmlwebpackPlugin = require('html-webpack-plugin')
 var path = require('path')
 
 module.exports = {
-  entry: {
-    index: './src/index.js',
-    test: './test.js'
-  },
-  output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: '[name].js',
-  },
-  plugins: [
-    new HtmlwebpackPlugin()
-  ]
+    entry: {
+        test: './test.js',
+        index: './src/index.js',
+    },
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: '[name].js',
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'build'),
+        compress: true,
+    },
+    plugins: [
+        new HtmlwebpackPlugin()
+    ],
+    devtool: "inline-source-map"
 }
