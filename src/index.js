@@ -1,0 +1,4 @@
+
+function MVVM(obj, ) {
+
+}

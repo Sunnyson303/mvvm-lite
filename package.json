@@ -1,0 +1,24 @@
+{
+  "name": "mvvm-lite",
+  "version": "1.0.0",
+  "description": "A simple MVVM library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunnyson303/mvvm-lite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sunnyson303/mvvm-lite/issues"
+  },
+  "homepage": "https://github.com/Sunnyson303/mvvm-lite#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.6.1"
+  }
+}
